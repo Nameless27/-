@@ -87,7 +87,7 @@ Shader "PlantsVsZombies/PoolCausticEffectShader"
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = v.uv;
                 o.uv += uvoffset;
-
+                o.uv.y = -o.uv.y;
 
                 return o;
             }
